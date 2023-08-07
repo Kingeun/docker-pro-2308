@@ -1,0 +1,6 @@
+FROM tensorflow/tensorflow:2.5.0
+RUN mkdir /model
+WORKDIR /model
+COPY model.py model/model.py
+RUN chmod +x /model/model.py
+ENTRYPOINT ["python", "/model/model.py"]
