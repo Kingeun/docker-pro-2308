@@ -1,1 +1,1 @@
-docker compose yml 사용해서 rabbitmq 실행
+- docker compose rabbitmq 실행
