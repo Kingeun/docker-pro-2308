@@ -1,0 +1,13 @@
+version: "3.0"
+services:
+  compose-training:
+    image: rabbitmq:management
+    ports:
+      - 5672:5672
+      - 15672:15672
+    networks:
+      - mq
+    restart: always
+
+networks:
+  mq:
